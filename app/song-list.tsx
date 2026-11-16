@@ -40,6 +40,15 @@ export default function SongList({
     youtubeDoneOnly,
     setYoutubeDoneOnly,
   ] = useState(false);
+console.log(
+  "SONGS:",
+  songs.map(
+    (s) => ({
+      title: s.title,
+      is_visible: s.is_visible,
+    })
+  )
+);
 
   const filteredSongs = useMemo(() => {
     const result = songs

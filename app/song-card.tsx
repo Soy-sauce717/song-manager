@@ -8,10 +8,7 @@ export default function SongCard({
   song: any;
   settings: any;
 }) {
-  if (song.is_visible === false) {
-    return null;
-  }
-
+ 
   return (
     <li
       className="
