@@ -43,11 +43,7 @@ export default function SongList({
 
   const filteredSongs = useMemo(() => {
     const result = songs
-      .filter(
-        (song) =>
-          song.is_visible !== false
-      )
-
+      
       .filter((song) => {
         if (
           practicingOnly &&

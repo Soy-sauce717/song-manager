@@ -22,6 +22,23 @@ export default function SongCard({
         shadow
       "
     >
+   {song.is_visible === false && (
+      <div className="mb-3 text-center">
+        <span
+          className="
+            bg-red-500
+            text-white
+            px-3
+            py-1
+            rounded
+            font-bold
+          "
+        >
+          非表示中
+        </span>
+      </div>
+    )}
+
       {song.practicing && (
         <div className="mb-3 text-center">
           <span
