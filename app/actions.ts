@@ -41,6 +41,11 @@ export async function addSong(
 
       other_info:
         formData.get("other_info"),
+practicing:
+  formData.get("practicing") === "on",
+
+is_visible:
+  formData.get("is_visible") === "on",
     });
 
   if (error) {
@@ -129,6 +134,11 @@ export async function updateSong(
 
       other_info:
         formData.get("other_info"),
+practicing:
+  formData.get("practicing") === "on",
+
+is_visible:
+  formData.get("is_visible") === "on",
     })
     .eq("id", id);
 
