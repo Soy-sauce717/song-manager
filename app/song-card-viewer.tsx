@@ -10,15 +10,16 @@ export default function SongCardViewer({
   }
 
   return (
-    <li
-      className="
-        border
-        rounded-lg
-        p-4
-        bg-white
-        shadow
-      "
-    >
+  <li
+  className="
+    border
+    rounded-lg
+    p-4
+    bg-white
+    text-black
+    shadow
+  "
+>
       {song.practicing && (
         <div className="mb-3 text-center">
           <span
